@@ -26,7 +26,7 @@ pipeline {
 
         stage('Push') {
             steps {
-                echo "push the docker image in docker hub"
+                sh './jenkins/push/push.sh'
             }
         }
 
